@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<link rel="stylesheet" href="./js/prismjs/prism.css" />
+<script src="./js/prismjs/prism.js"></script>
+
+<link rel="stylesheet" href="./js/mermaidjs/mermaid.css" />
+<script src="./js/mermaidjs/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/github-markdown.css">
+<style>
+	.markdown-body {
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+<pre><code>@media (max-width: 767px) {
+	.markdown-body {
+		padding: 15px;
+	}
+}
+</code></pre>
+
+</style>
+
+<article class="markdown-body">
+<h1 id="tableofcontents">Table of Contents</h1>
+
+<div class="TOC">
+
+<ul>
+<li><a href="#tableofcontents">Table of Contents</a></li>
+<li><a href="#markdownliteraryprogramming">Markdown Literary Programming</a>
+<ul>
+<li><a href="#note">Note</a>
+<ul>
+<li><a href="#subdirectorysandfileofmlt_base_dir">Subdirectorys and file of mlt_base_dir</a></li>
+<li><a href="#pythonlib:">Python lib:</a></li>
+<li><a href="#viewer">Viewer</a>
+<ul>
+<li><a href="#cutemarkedviewer1">Cutemarked (viewer = 1)</a></li>
+<li><a href="#multimarkdownchromeviewer2">MultiMarkdown + Chrome (viewer = 2)</a></li>
+<li><a href="#markdownviewerviewer3">Markdownviewer++ (viewer = 3)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#config">Config</a></li>
+<li><a href="#endconfig">End Config</a></li>
+<li><a href="#code">Code</a>
+<ul>
+<li><a href="#init">Init</a></li>
+<li><a href="#getcommonheadtext">get Common Head Text</a></li>
+<li><a href="#convertmarkdownliteraryprogrammingtomarkdown">Convert Markdown Literary Programming to Markdown</a></li>
+<li><a href="#mergecommonheadtextandmarkdown">merge Common Head Text and Markdown</a></li>
+<li><a href="#view">View</a>
+<ul>
+<li><a href="#cutemarked">CuteMarked</a></li>
+<li><a href="#multimarkdownchrome">MultiMarkdown+Chrome</a></li>
+<li><a href="#markdownviewerchrome">MarkdownViewer++Chrome</a></li>
+</ul>
+</li>
+<li><a href="#cleanmlt_out_dir">Clean mlt_out_dir</a></li>
+</ul>
+</li>
+<li><a href="#endcode">End Code</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<p>-<em>- coding:utf-8 -</em>-</p>
+
+<h1 id="markdownliteraryprogramming">Markdown Literary Programming</h1>
+
+<p>Author: Lin Pengcheng</p>
+
+<p>Blog: <a href="https://github.com/linpengcheng/PurefunctionPipelineDataflow/blob/master/doc/markdown_literary_programming.md">Markdown Literary Programming</a></p>
+
+<h2 id="note">Note</h2>
+
+<h3 id="subdirectorysandfileofmlt_base_dir">Subdirectorys and file of mlt_base_dir</h3>
+
+<ul>
+<li><p>out (Changeable)</p></li>
+<li><p>js</p></li>
+<li><p>image</p></li>
+<li><p>css</p></li>
+<li><p>MultiMarkdown (Optional)</p></li>
+<li><p>CuteMarked (Optional)</p></li>
+<li><p>ChromePortable (Optional)</p></li>
+<li><p>MLT_common_head.md</p></li>
+</ul>
+
+<p>out_dir can be separated from mlt_base_dir(public resource directory),</p>
+
+<p>but must be on the same disk, in &#8220;mlt_common_head.md&#8221; file,</p>
+
+<p>the path starts with the root path, for example:</p>
+
+<p><code>/path_to/mlt_base_dir/js/prismjs/prism.js</code></p>
+
+<h3 id="pythonlib:">Python lib:</h3>
+
+<p>markdown or mistune does not support mermaid</p>
+
+<h3 id="viewer">Viewer</h3>
+
+<h4 id="cutemarkedviewer1">Cutemarked (viewer = 1)</h4>
+
+<ul>
+<li><p>it is the only native Markdown viewer that supports JS, image, HTML.</p></li>
+<li><p>it has an outline view of Markdown.</p></li>
+<li><p>It exports HTML in chrome is not good to display.</p></li>
+</ul>
+
+<h4 id="multimarkdownchromeviewer2">MultiMarkdown + Chrome (viewer = 2)</h4>
+
+<ul>
+<li><p>MultiMarkdown support TOC.</p></li>
+<li><p>MultiMarkdown does not support the GitHub style</p></li>
+</ul>
+
+<p>code block block and Mermaid charts,</p>
+
+<p>I made a correction in py.</p>
+
+<ul>
+<li><p>Multimarkdown faster and lighter than pandoc.</p></li>
+<li><p>When converted to HTML, it is automatically open with Chrome,</p></li>
+</ul>
+
+<p>and the display works well.</p>
+
+<h4 id="markdownviewerviewer3">Markdownviewer++ (viewer = 3)</h4>
+
+<ul>
+<li><p>It exports HTML in chrome is displayed very well</p></li>
+<li><p>fast, Its viewer is only supported by plain text markdown LivePreview.</p></li>
+<li><p>its viewer no syntax highlighted, no mermaid, no image displayed</p></li>
+</ul>
+
+<h2 id="config">Config</h2>
+
+<pre><code class="language-python">
+
+viewer = 2
+is_clean_mlt_out_dir = False
+is_delete_generate_file = False
+mlt_base_dir = notepad.getNppDir() + &quot;\\MarkdownLiteraryProgramming&quot;
+# mlt_out_dir = mlt_base_dir + &quot;\\out&quot;
+mlt_out_dir = mlt_base_dir
+cutemarked_path = mlt_base_dir + &quot;\\cutemarked\\cutemarked.exe&quot;
+multimarkdown_path = mlt_base_dir + &quot;\\MultiMarkdown\\bin\\multimarkdown.exe&quot;
+chrome_path = &quot;D:\\PortableApps\\GoogleChromePortable\\GoogleChromePortable.exe&quot;
+</code></pre>
+
+<h2 id="endconfig">End Config</h2>
+
+<h2 id="code">Code</h2>
+
+<h3 id="init">Init</h3>
+
+<pre><code class="language-python">
+
+import os
+import re
+import time
+notepad.save()
+current_full_path = notepad.getCurrentFilename()
+(current_dir, current_filename) = os.path.split(current_full_path)
+if not os.path.exists(mlt_out_dir):
+    os.makedirs(mlt_out_dir)
+</code></pre>
+
+<h3 id="getcommonheadtext">get Common Head Text</h3>
+
+<pre><code class="language-python">
+
+common_head_txt = &quot;&quot;
+common_head_file = mlt_base_dir + &quot;\\MLP_common_head.md&quot;
+if os.path.exists(common_head_file):
+    f= open(common_head_file,'r')
+    common_head_txt = f.read()
+    f.close()
+replace_txt = &quot;&quot;
+if mlt_out_dir == mlt_base_dir + &quot;\\out&quot;:
+    replace_txt = &quot;..&quot;
+elif mlt_out_dir == mlt_base_dir:
+    replace_txt = &quot;.&quot;
+else: # remove disk, unix style 
+    replace_txt = re.sub('[a-z,A-Z]{1}:', &quot;&quot;, mlt_base_dir)
+    replace_txt = replace_txt.replace('\\','/')
+common_head_txt = re.sub('%mlt_base_dir%', replace_txt, common_head_txt,0,re.M)	
+</code></pre>
+
+<h3 id="convertmarkdownliteraryprogrammingtomarkdown">Convert Markdown Literary Programming to Markdown</h3>
+
+<pre><code class="language-python">
+
+dest_text = editor.getText()
+# lisp or null (default as lisp) 
+if editor.getLexerLanguage() == 'lisp' or editor.getLexerLanguage() == 'null':
+    dest_text = re.sub(r'^;', &quot;&quot;, dest_text,0,re.M)
+elif editor.getLexerLanguage() == 'python' or editor.getLexerLanguage() == 'r':
+    dest_text = re.sub(r'^#', &quot;&quot;, dest_text,0,re.M)
+elif editor.getLexerLanguage() == 'cpp':
+    dest_text = re.sub(r'//', &quot;&quot;, dest_text,0,re.M) 
+else:
+    dest_text = dest_text
+# dest_text = common_head_txt + markdown.markdown(dest_text)
+# dest_text = common_head_txt + mistune.markdown(dest_text)
+</code></pre>
+
+<h3 id="mergecommonheadtextandmarkdown">merge Common Head Text and Markdown</h3>
+
+<pre><code class="language-python">
+
+md_body_begin = '\r\n\r\n&lt;article class=&quot;markdown-body&quot;&gt;\r\n\r\n'
+md_body_end   = '\r\n\r\n&lt;/article&gt;'
+TOC = &quot;# Table of Contents \r\n\r\n{{TOC}}\r\n\r\n&quot;
+if viewer == 2:
+    dest_text = common_head_txt + md_body_begin + TOC + dest_text +md_body_end
+else:
+    dest_text = common_head_txt + md_body_begin + dest_text + md_body_end
+</code></pre>
+
+<h3 id="view">View</h3>
+
+<h4 id="cutemarked">CuteMarked</h4>
+
+<pre><code class="language-python">
+
+if viewer == 1:
+    # Method 1: create a md file, to open by cutemarked.
+    if not os.path.exists(cutemarked_path):
+        cutemarked_url = &quot;https://github.com/cloose/CuteMarkEd&quot;
+        msg = &quot;CuteMarked.exe does not exists! \r\nvar cutemarked_path: &quot; + cutemarked_path + &quot;\r\nIt can be download from &quot; + cutemarked_url
+        notepad.messageBox(msg, &quot;Warning&quot;, 0)
+    dest_full_path = mlt_out_dir + &quot;\\&quot; + current_filename + &quot;.md&quot;
+    f= open(dest_full_path,'w')
+    f.write(dest_text)
+    f.close()
+    cmd = cutemarked_path + &quot; &quot; + dest_full_path
+    # os.system(cmd)
+    os.popen(cmd)
+    if is_delete_generate_file:
+        os.remove(dest_full_path)
+</code></pre>
+
+<h4 id="multimarkdownchrome">MultiMarkdown+Chrome</h4>
+
+<pre><code class="language-python">
+
+elif viewer == 2:
+	  # Method 2: MultiMarkdown+Chrome 
+    if not os.path.exists(multimarkdown_path):
+        multimarkdown_url = &quot;https://github.com/fletcher/MultiMarkdown-6&quot;
+        msg = &quot;multimarkdown.exe does not exists! \r\nvar multimarkdown_path: &quot; + multimarkdown_path + &quot;\r\nIt can be download from &quot; + multimarkdown_url
+        notepad.messageBox(msg, &quot;Warning&quot;, 0)
+    if not os.path.exists(chrome_path):
+        chrome_url = &quot;https://portableapps.com/apps/internet/google_chrome_portable&quot;
+        msg = &quot;Chrome.exe(or GoogleChromePortable.exe) does not exists! \r\nvar chrome_path: &quot; + chrome_path + &quot;\r\nIt can be download from &quot; + chrome_url
+        notepad.messageBox(msg, &quot;Warning&quot;, 0)
+    md_full_path = mlt_out_dir + &quot;\\&quot; + current_filename + &quot;.md&quot;
+    f= open(md_full_path,'w')
+    f.write(dest_text)
+    f.close()
+    html_full_path = mlt_out_dir + &quot;\\&quot; + current_filename + &quot;.html&quot;
+    cmd = multimarkdown_path + &quot; --full --to=html --output=&quot; + html_full_path + &quot; &quot; + md_full_path
+    # cmd = multimarkdown_path + &quot; --full &quot; + md_full_path
+    os.popen(cmd)
+    f= open(html_full_path,'r')
+    html_txt = f.read()
+    f.close()
+    html_txt = re.sub(r'&lt;pre&gt;&lt;code class=&quot;', r'&lt;pre&gt;&lt;code class=&quot;language-', html_txt, 0, re.M)
+    html_txt = re.sub(r'&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;', r'&lt;pre&gt;&lt;code class=&quot;mermaid&quot;&gt;', html_txt, 0, re.M)
+    html_txt = html_txt.replace(&quot;\r\n\r\n&quot;,&quot;\r\n&quot;)
+    f= open(html_full_path,'w')
+    f.write(html_txt)
+    f.close()
+    cmd = chrome_path + &quot; &quot; + html_full_path
+    os.popen(cmd)
+    if is_delete_generate_file:
+        time.sleep(15)
+        os.remove(md_full_path)
+        os.remove(html_full_path)
+</code></pre>
+
+<h4 id="markdownviewerchrome">MarkdownViewer++Chrome</h4>
+
+<pre><code class="language-python">
+
+else:  
+    # Method 3: MarkdownViewer++Chrome
+    editor2= notepad.new()
+    editor.setText(dest_text)
+    # dest_full_path = mlt_out_dir + current_filename + &quot;.md&quot;
+    # notepad.saveAs(dest_full_path)
+    notepad.runPluginCommand('MarkdownViewer++','MarkdownViewer++')
+</code></pre>
+
+<h3 id="cleanmlt_out_dir">Clean mlt_out_dir</h3>
+
+<pre><code class="language-python">
+
+def del_file(path):
+    ls = os.listdir(path)
+    for i in ls:
+        c_path = os.path.join(path, i)
+        if os.path.isdir(c_path):
+            del_file(c_path)
+        else:
+            os.remove(c_path)
+if is_clean_mlt_out_dir:
+    if viewer == 2:
+        time.sleep(15)
+    del_file(mlt_out_dir)
+  
+</code></pre>
+
+<h2 id="endcode">End Code</h2>
+
+</article>
+
+</body>
+</html>
+

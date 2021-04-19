@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<link rel="stylesheet" href="./js/prismjs/prism.css" />
+<script src="./js/prismjs/prism.js"></script>
+
+<link rel="stylesheet" href="./js/mermaidjs/mermaid.css" />
+<script src="./js/mermaidjs/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/github-markdown.css">
+<style>
+	.markdown-body {
+		box-sizing: border-box;
+		min-width: 200px;
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 45px;
+	}
+
+<pre><code>@media (max-width: 767px) {
+	.markdown-body {
+		padding: 15px;
+	}
+}
+</code></pre>
+
+</style>
+
+<article class="markdown-body">
+<h1 id="tableofcontents">Table of Contents</h1>
+
+<div class="TOC">
+
+<ul>
+<li><a href="#tableofcontents">Table of Contents</a></li>
+<li><a href="#markdownliteraryprogrammingexample">Markdown literary programming Example</a>
+<ul>
+<li><a href="#example01:codewithsyntaxhighlighting.">example01: Code with syntax highlighting.</a></li>
+<li><a href="#example02:mermaidflowchart">example02: Mermaid flow chart</a></li>
+<li><a href="#example03:image">example03: Image</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h1 id="markdownliteraryprogrammingexample">Markdown literary programming Example</h1>
+
+<h2 id="example01:codewithsyntaxhighlighting.">example01: Code with syntax highlighting.</h2>
+
+<pre><code class="language-clojure">
+(defn f [[evens odds total amax amin] x]
+  (let [[evens odds] (cond 
+                       (even? x) [(inc evens ) odds]
+                       (odd? x)  [evens (inc odds)]
+                       :else     [evens odds])
+        total (+ total x)
+        amax  (max amax x)
+        amin  (min amin x)]   
+     [evens odds total amax amin]))
+;The comment of the code requires at least two line comment characters
+(reduce f [0 0 0 ##-Inf ##Inf] [5 6 8 -3 -9 11 156 6 7])
+</code></pre>
+
+<p>return <code>[4 5 187 156 -9]</code></p>
+
+<h2 id="example02:mermaidflowchart">example02: Mermaid flow chart</h2>
+
+<pre><code class="mermaid">
+graph LR
+      A--&gt;B
+      B--&gt;C
+      C--&gt;A
+      D--&gt;C
+</code></pre>
+
+<h2 id="example03:image">example03: Image</h2>
+
+<figure>
+<img src="./image/cowplot.png" alt="cowplot" />
+<figcaption>cowplot</figcaption>
+</figure>
+
+</article>
+
+</body>
+</html>
+

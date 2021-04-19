@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- ==========================================\
+| To learn how to make your own language parser, 
+| please check the following link:
+| https://npp-user-manual.org/docs/function-list/
+\============================================= -->
+<NotepadPlus>
+	<functionList>
+		<!-- ==== [ Lisp ] -->
+    <parser
+        displayName="Lisp"
+        id         ="Lisp"
+        commentExpr="(?m-s:;.*?$)|(;.*?$)|((;.)?$)"
+      >
+        <function
+          mainExpr="(?x)
+                    (^(\(\s*(def[^\{\}\[\]\(\)\^\.\s:#@/\\']*))\s+(\^.*)*\s*(\^\{[^{}]+\})?\s*[^\{\}\[\]\(\)\^\.\s:#@/\\']+([\(\)\[\]\s \t]$))
+                   |(^(\(\s*(def[^\{\}\[\]\(\)\^\.\s:#@/\\']*))\s+(\^.*)*\s*(\^\{[^{}]+\})?\s*([-[:alnum:]*+!_:\/.?]+))
+                   |(\(\s*intern\s+(\^.*)*([-[:alnum:]*+!_:\/.?]+))"
+        />
+      </parser>
+	</functionList>
+</NotepadPlus>

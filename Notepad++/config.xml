@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<NotepadPlus>
+    <ProjectPanels>
+        <ProjectPanel id="0" workSpaceFile="" />
+        <ProjectPanel id="1" workSpaceFile="" />
+        <ProjectPanel id="2" workSpaceFile="" />
+    </ProjectPanels>
+    <GUIConfigs>
+        <GUIConfig name="ToolBar" visible="yes">standard</GUIConfig>
+        <GUIConfig name="StatusBar">show</GUIConfig>
+        <GUIConfig name="TabBar" dragAndDrop="yes" drawTopBar="yes" drawInactiveTab="yes" reduce="yes" closeButton="yes" doubleClick2Close="no" vertical="no" multiLine="yes" hide="no" quitOnEmpty="no" iconSetNumber="0" />
+        <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
+        <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
+        <GUIConfig name="TabSetting" replaceBySpace="yes" size="2" />
+        <GUIConfig name="AppPosition" x="-10" y="0" width="1833" height="1063" isMaximized="yes" />
+        <GUIConfig name="FindWindowPosition" left="430" top="168" right="1409" bottom="807" />
+        <GUIConfig name="FinderConfig" wrappedLines="no" />
+        <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20210419">no</GUIConfig>
+        <GUIConfig name="Auto-detection">yes</GUIConfig>
+        <GUIConfig name="CheckHistoryFiles">no</GUIConfig>
+        <GUIConfig name="TrayIcon">no</GUIConfig>
+        <GUIConfig name="MaitainIndent">yes</GUIConfig>
+        <GUIConfig name="TagsMatchHighLight" TagAttrHighLight="yes" HighLightNonHtmlZone="no">yes</GUIConfig>
+        <GUIConfig name="RememberLastSession">yes</GUIConfig>
+        <GUIConfig name="DetectEncoding">yes</GUIConfig>
+        <GUIConfig name="NewDocDefaultSettings" format="0" encoding="4" lang="30" codepage="-1" openAnsiAsUTF8="yes" />
+        <GUIConfig name="langsExcluded" gr0="62" gr1="12" gr2="33" gr3="43" gr4="249" gr5="63" gr6="158" gr7="249" gr8="255" gr9="254" gr10="6" gr11="0" gr12="0" langMenuCompact="yes" />
+        <GUIConfig name="Print" lineNumber="yes" printOption="3" headerLeft="" headerMiddle="$(FILE_NAME)" headerRight="" footerLeft="" footerMiddle="$(CURRENT_PRINTING_PAGE)" footerRight="" headerFontName="" headerFontStyle="0" headerFontSize="0" footerFontName="" footerFontStyle="0" footerFontSize="0" margeLeft="0" margeRight="0" margeTop="0" margeBottom="0" />
+        <GUIConfig name="Backup" action="0" useCustumDir="no" dir="U:\dev\Notepad76\backup\saved" isSnapshotMode="yes" snapshotBackupTiming="3000" />
+        <GUIConfig name="TaskList">yes</GUIConfig>
+        <GUIConfig name="MRU">yes</GUIConfig>
+        <GUIConfig name="URL">0</GUIConfig>
+        <GUIConfig name="uriCustomizedSchemes">svn:// cvs:// git:// imap:// irc:// irc6:// ircs:// ldap:// ldaps:// news: telnet:// gopher:// ssh:// sftp:// smb:// skype: snmp:// spotify: steam:// sms: slack:// chrome:// bitcoin:</GUIConfig>
+        <GUIConfig name="globalOverride" fg="no" bg="no" font="no" fontSize="no" bold="no" italic="no" underline="no" />
+        <GUIConfig name="auto-completion" autoCAction="3" triggerFromNbChar="1" autoCIgnoreNumbers="no" funcParams="yes" />
+        <GUIConfig name="auto-insert" parentheses="no" brackets="no" curlyBrackets="no" quotes="no" doubleQuotes="no" htmlXmlTag="no" />
+        <GUIConfig name="sessionExt">.npps</GUIConfig>
+        <GUIConfig name="workspaceExt">.nppw</GUIConfig>
+        <GUIConfig name="MenuBar">show</GUIConfig>
+        <GUIConfig name="Caret" width="1" blinkRate="600" />
+        <GUIConfig name="ScintillaGlobalSettings" enableMultiSelection="yes" />
+        <GUIConfig name="openSaveDir" value="0" defaultDirPath="" />
+        <GUIConfig name="titleBar" short="no" />
+        <GUIConfig name="stylerTheme" path="C:\dev\Notepad++\themes\VS2012-Dark.xml" />
+        <GUIConfig name="wordCharList" useDefault="no" charsAdded="!$%*-+&gt;&lt;.?/" />
+        <GUIConfig name="delimiterSelection" leftmostDelimiter="40" rightmostDelimiter="41" delimiterSelectionOnEntireDocument="yes" />
+        <GUIConfig name="multiInst" setting="0" />
+        <GUIConfig name="MISC" fileSwitcherWithoutExtColumn="no" backSlashIsEscapeCharacterForSql="yes" writeTechnologyEngine="1" isFolderDroppedOpenFiles="no" docPeekOnTab="no" docPeekOnMap="no" saveDlgExtFilterToAllTypes="no" muteSounds="no" />
+        <GUIConfig name="Searching" monospacedFontFindDlg="yes" stopFillingFindField="no" findDlgAlwaysVisible="no" confirmReplaceInAllOpenDocs="yes" />
+        <GUIConfig name="searchEngine" searchEngineChoice="3" searchEngineCustom="" />
+        <GUIConfig name="SmartHighLight" matchCase="no" wholeWordOnly="yes" useFindSettings="no" onAnotherView="no">yes</GUIConfig>
+        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" lineNumberDynamicWidth="yes" bookMarkMargin="show" indentGuideLine="show" folderMarkStyle="box" lineWrapMethod="aligned" currentLineHilitingShow="show" scrollBeyondLastLine="no" rightClickKeepsSelection="no" disableAdvancedScrolling="no" wrapSymbolShow="hide" Wrap="no" borderEdge="yes" isEdgeBgMode="no" edgeMultiColumnPos="" zoom="8" zoom2="0" whiteSpaceShow="hide" eolShow="hide" borderWidth="2" smoothFont="no" />
+        <GUIConfig name="DockingManager" leftWidth="551" rightWidth="1157" topHeight="200" bottomHeight="392">
+            <FloatingWindow cont="4" x="422" y="357" width="986" height="895" />
+            <PluginDlg pluginName="MarkdownViewer++" id="0" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="NppExec.dll" id="-1" curr="3" prev="-1" isVisible="yes" />
+            <PluginDlg pluginName="ppGTags.dll" id="0" curr="3" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Explorer.dll" id="1" curr="0" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="44085" curr="0" prev="4" isVisible="no" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="44084" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Explorer.dll" id="0" curr="0" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="0" curr="3" prev="4" isVisible="no" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="44081" curr="4" prev="0" isVisible="no" />
+            <PluginDlg pluginName="Regex Trainer" id="1" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="FWDataViz.dll" id="0" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Snippets" id="-1" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="42051" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="44070" curr="0" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="MultiClipboard.dll" id="0" curr="0" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="42052" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="FingerText.dll" id="2" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="NppConverter.dll" id="3" curr="4" prev="0" isVisible="no" />
+            <PluginDlg pluginName="NPPJSONViewer.dll" id="0" curr="0" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="NppMarkdownPanel" id="1" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="PreviewHTML.dll" id="0" curr="1" prev="4" isVisible="no" />
+            <PluginDlg pluginName="ComparePlugin.dll" id="11" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="GraphBuilder.dll" id="1" curr="1" prev="4" isVisible="no" />
+            <PluginDlg pluginName="Npp Xml Treview" id="0" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="3P" id="2" curr="0" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="3P" id="1" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Tags" id="-1" curr="0" prev="-1" isVisible="yes" />
+            <PluginDlg pluginName="NppExec.dll" id="2" curr="3" prev="-1" isVisible="yes" />
+            <PluginDlg pluginName="Python Script" id="-1" curr="3" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="NppTaskList.dll" id="15" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="dummy" id="0" curr="3" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="SourceCookifier.dll" id="0" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="NppDocShare.dll" id="0" curr="1" prev="-1" isVisible="yes" />
+            <PluginDlg pluginName="GrepBugs" id="0" curr="3" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="JavaScript Map Parser" id="0" curr="0" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="npp.connections.dll" id="0" curr="4" prev="0" isVisible="no" />
+            <PluginDlg pluginName="CsvQuery" id="0" curr="3" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="LocationNavigate.dll" id="4" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="NppQuickSearchPanel" id="0" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="NewFileBrowser.dll" id="3" curr="3" prev="4" isVisible="no" />
+            <ActiveTabs cont="0" activeTab="-1" />
+            <ActiveTabs cont="1" activeTab="-1" />
+            <ActiveTabs cont="2" activeTab="-1" />
+            <ActiveTabs cont="3" activeTab="0" />
+        </GUIConfig>
+    </GUIConfigs>
+</NotepadPlus>

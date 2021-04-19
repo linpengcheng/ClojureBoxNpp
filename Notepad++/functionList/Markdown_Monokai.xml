@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- ==========================================\
+| To learn how to make your own language parser, 
+| please check the following link:
+| https://npp-user-manual.org/docs/function-list/
+\============================================= -->
+<NotepadPlus>
+	<functionList>
+		<!-- ==== [ Markdown_Monokai ] -->
+      <parser
+        displayName="Markdown_Monokai"
+        id         ="Markdown_Monokai"
+        commentExpr=""
+      >
+        <function
+          mainExpr="(?x)((?:^|\n)\s*[#]+\s+(.*?)(\r*|\n*)$)
+                       |((?:^|\n)\s*[\r\n]+\s*[-]{3,}\s*[\r\n]+\s*(\r*|\n*)$)"
+        />
+      </parser>
+	</functionList>
+</NotepadPlus>

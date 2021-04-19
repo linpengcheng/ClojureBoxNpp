@@ -1,0 +1,41 @@
+cmark-gfm-0.28.3.gfm.15
+
+Usage:   cmark-gfm [FILE*]
+Options:
+  --to, -t FORMAT   Specify output format (html, xml, man, commonmark, plaintext, latex)
+                    指定输出格式
+  --width WIDTH     Specify wrap width (default 0 = nowrap)
+                    指定换行宽度
+  --sourcepos       Include source position attribute
+                    源位置属性
+  --hardbreaks      Treat newlines as hard line breaks
+                    将新行视为硬回车
+  --nobreaks        Render soft line breaks as spaces
+                    软回车视为空格渲染
+  --safe            Suppress raw HTML and dangerous URLs
+                    抑制原始 HTML 和危险 Url
+  --smart           Use smart punctuation
+                    使用智能标点符号
+  --validate-utf8   Replace UTF-8 invalid sequences with U+FFFD
+                    将utf8无效序列替换为 U+FFFD
+  --github-pre-lang Use GitHub-style <pre lang> for code blocks
+                    对于代码块使用GitHub-style <pre lang="">
+  --footnotes       Parse footnotes
+                    解析脚注
+  --extension, -e EXTENSION_NAME  Specify an extension name to use
+                                  指定要使用的扩展名称
+  --list-extensions               List available extensions and quit
+                                  列出可用扩展列表并退出
+  --strikethrough-double-tilde    Only parse strikethrough (if enabled)
+                                  with two tildes
+                                  仅使用两个倾斜法分析删除线 (如果启用)。
+  --table-prefer-style-attributes Use style attributes to align table cells
+                                  instead of align attributes.
+                                  使用样式属性对齐表格单元格, 而不是对齐属性。
+
+  --full-info-string              Include remainder of code block info
+                                  string in a separate attribute.
+                                  在单独的属性中包含代码块信息字符串的其余部分。
+  --help, -h       Print usage information
+  
+  --version        Print version
