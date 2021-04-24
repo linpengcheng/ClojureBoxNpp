@@ -84,6 +84,17 @@ https://sourceforge.net/projects/npp-plugins/files/
     https://sourceforge.net/projects/npp-plugins/files/XBrackets%20Lite/
 
   - BracketsCheck: https://github.com/niccord/BracketsCheck
+        
+  - cli tools
+    
+    - NppExec: https://github.com/d0vgan/nppexec
+      - notepad++\tools\clj\babashka --file current-file
+      - notepad++\tools\clj\babashka --eval selectquotedtext
+
+    - pork2Sausage: https://github.com/npp-plugins/pork2sausage
+      - notepad++\tools\clj\hiccup-cli (convert selectd HTML to Hiccup)
+      - notepad++\tools\clj\babashka
+        - notepad++\tools\clj\npp_convert.clj (convert selected text to ?)
   
 - Develop
 
@@ -182,13 +193,6 @@ https://sourceforge.net/projects/npp-plugins/files/
 
   - Regex Trainer:
     https://github.com/ahmoylaw/RegexTrainer-Descriptions
-    
-- cli tools
-  
-  - NppExec: https://github.com/d0vgan/nppexec
-
-  - pork2Sausage:
-    https://github.com/npp-plugins/pork2sausage
 
 - Sys
 
