@@ -88,6 +88,7 @@ https://sourceforge.net/projects/npp-plugins/files/
   - cli tools
     
     - NppExec: https://github.com/d0vgan/nppexec
+      - notepad++\tools\clj\clj-kondo.exe --lint current-file
       - notepad++\tools\clj\babashka --file current-file
       - notepad++\tools\clj\babashka --eval selectquotedtext
 
