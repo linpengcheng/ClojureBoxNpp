@@ -1,7 +1,8 @@
-(use '[hiccup.core :as hiccup])
+(use 'hiccup.core)
 (->> *command-line-args* 
      first
      slurp
      read-string
+     eval
      html
      print)
