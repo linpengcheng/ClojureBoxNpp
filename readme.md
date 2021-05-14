@@ -17,7 +17,7 @@ BracketHighlighter:
 
 1. copy all files of notepad++ directory to notepad++ home directory.
 
-2. copy Notepad++/plugins/.ctags file to user home directory (c:\user\xxx).
+2. copy Notepad++/tools/ctags/.ctags file to user home directory (c:\user\xxx).
 
 ### Config files of Clojure (userDefineLangs Clojure is Clojure, Lisp is also Clojure.) 
 
@@ -96,6 +96,13 @@ https://sourceforge.net/projects/npp-plugins/files/
       - notepad++\tools\clj\hiccup-cli (convert selectd HTML to Hiccup)
       - notepad++\tools\clj\babashka
         - notepad++\tools\clj\npp_convert.clj (convert selected text to ?)
+  
+  - Edit hiccup with live preview
+    * Babashka
+    * Notepad++/tools/clj/hiccup2html.clj
+    * Preview HTML plugin
+      * Notepad++/plugins/Config/PreviewHTML/Settings.ini
+      * Notepad++/plugins/Config/PreviewHTML/Filters.ini
   
 - Develop
 
