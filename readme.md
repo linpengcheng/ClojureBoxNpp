@@ -99,7 +99,7 @@ https://sourceforge.net/projects/npp-plugins/files/
   
   - Edit hiccup with live preview
     * Babashka
-    * Notepad++/tools/clj/hiccup2html.clj
+      * Notepad++/tools/clj/hiccup2html.clj
     * Preview HTML plugin
       * Notepad++/plugins/Config/PreviewHTML/Settings.ini
       * Notepad++/plugins/Config/PreviewHTML/Filters.ini
