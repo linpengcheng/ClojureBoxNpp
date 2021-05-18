@@ -107,6 +107,8 @@ https://sourceforge.net/projects/npp-plugins/files/
 - Develop
 
   - Languages: https://github.com/MAPJe71/Languages
+  
+  - nppTagLEET: https://github.com/vinsworldcom/nppTagLEET
 
   - NppGTags: https://github.com/pnedev/nppgtags
  
