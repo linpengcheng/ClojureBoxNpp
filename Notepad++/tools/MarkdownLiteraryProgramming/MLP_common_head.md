@@ -1,12 +1,14 @@
-<link rel="stylesheet" href="%mlt_base_dir%/js/prismjs/prism.css" />
-<script src="%mlt_base_dir%/js/prismjs/prism.js"></script>
+<html>
+<head>
+<link rel="stylesheet" href="%npp_mlp_dir%/js/prismjs/prism.css" />
+<script src="%npp_mlp_dir%/js/prismjs/prism.js"></script>
 
-<link rel="stylesheet" href="%mlt_base_dir%/js/mermaidjs/mermaid.css" />
-<script src="%mlt_base_dir%/js/mermaidjs/mermaid.min.js"></script>
+<link rel="stylesheet" href="%npp_mlp_dir%/js/mermaidjs/mermaid.css" />
+<script src="%npp_mlp_dir%/js/mermaidjs/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="%mlt_base_dir%/css/github-markdown.css">
+<link rel="stylesheet" href="%npp_mlp_dir%/css/github-markdown.css">
 <style>
 	.markdown-body {
 		box-sizing: border-box;
@@ -22,3 +24,12 @@
 		}
 	}
 </style>
+</head>
+<body>
+
+<!-- MulitMarkdown TOC -->
+ 
+<!-- # Markdown Literary Programming -->
+
+{{TOC}}
+
