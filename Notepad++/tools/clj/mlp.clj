@@ -71,7 +71,7 @@
     (slurp , :encoding "utf-8")
     (clojure.string/replace , re-blank-line ";\r\n") ;line comment let blank line to md blank line
     (clojure.string/replace , re-code-blocks fenced-code-blocks) ; add Fenced code blocks
-    (clojure.string/replace , re-line-comment "") ;remove all line comments
+    (clojure.string/replace , re-line-comment "") ;remove all first line comment chars at line ahead
     (#(str md-head-txt % md-tail-txt)) 
     mmd2html
     println)
