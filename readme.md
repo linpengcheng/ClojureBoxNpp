@@ -12,6 +12,21 @@ BracketHighlighter:
 
 ![](./Screenshots/nppBracketHighlighter.png)
 
+Markdown outline:
+
+![](./Screenshots/md_outline.png)
+
+Markdown Literary Programming 01: Code with syntax highlighting
+
+![](./Screenshots/mlp_clj.png)
+
+Markdown Literary Programming 02: Mermaid flow chart
+
+![](./Screenshots/mlp_mermaid.png)
+
+Markdown Literary Programming 03: Image
+
+![](./Screenshots/mlp_image.png)
 
 ### Patch edition Method:
 
