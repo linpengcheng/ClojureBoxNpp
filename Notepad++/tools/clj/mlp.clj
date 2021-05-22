@@ -4,6 +4,8 @@
 
 ; My Blog: [The Grand Unified Programming Theory: The Pure Function Pipeline Data Flow with Principle-based Warehouse/Workshop Model](https://github.com/linpengcheng/PurefunctionPipelineDataflow)
 
+; Reference: [Markdown Literary programming that don't break the syntax of any programming language](https://github.com/linpengcheng/PurefunctionPipelineDataflow/blob/master/doc/markdown_literary_programming.md)
+
 ; ## Config
 
 (def npp-tools "C:/Notepad++/tools")   
