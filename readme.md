@@ -28,7 +28,7 @@ Markdown Literary Programming 03: Image
 
 ![](./Screenshots/mlp_image.png)
 
-Edit hiccup with live preview:
+Edit Clojure hiccup (HTML DSL) with live preview:
 
 ![](./Screenshots/edit_hiccup_with_live_preview.png)
 
