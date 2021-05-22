@@ -28,6 +28,10 @@ Markdown Literary Programming 03: Image
 
 ![](./Screenshots/mlp_image.png)
 
+Edit hiccup with live preview:
+
+![](./Screenshots/edit_hiccup_with_live_preview.png)
+
 ### Patch edition Method:
 
 1. copy all files of notepad++ directory to notepad++ home directory.
