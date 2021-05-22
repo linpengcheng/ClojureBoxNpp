@@ -118,6 +118,13 @@ https://sourceforge.net/projects/npp-plugins/files/
     * Preview HTML plugin
       * Notepad++/plugins/Config/PreviewHTML/Settings.ini
       * Notepad++/plugins/Config/PreviewHTML/Filters.ini
+      
+  - Markdown Literary Programming with live preview for Clojure
+    * Babashka
+      * Notepad++/tools/clj/mlp.clj
+    * Preview HTML plugin
+      * Notepad++/plugins/Config/PreviewHTML/Settings.ini
+      * Notepad++/plugins/Config/PreviewHTML/Filters.ini
   
 - Develop
 
