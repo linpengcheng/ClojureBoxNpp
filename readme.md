@@ -28,6 +28,10 @@ Markdown Literary Programming 03: Image
 
 ![](./Screenshots/mlp_image.png)
 
+Markdown Literary Programming 04: UI + Javascript/Clojurescript (sci)
+
+![](./Screenshots/mlp_ui_cljs.png)
+
 Edit Clojure hiccup (HTML DSL) with live preview:
 
 ![](./Screenshots/edit_hiccup_with_live_preview.png)
@@ -124,7 +128,7 @@ https://sourceforge.net/projects/npp-plugins/files/
       * Notepad++/plugins/Config/PreviewHTML/Filters.ini
       
   - Markdown Literary Programming with live preview for Clojure
-    * Babashka
+    * Babashka + sci-script-tag.js
       * Notepad++/tools/clj/mlp.clj
     * Preview HTML plugin
       * Notepad++/plugins/Config/PreviewHTML/Settings.ini
