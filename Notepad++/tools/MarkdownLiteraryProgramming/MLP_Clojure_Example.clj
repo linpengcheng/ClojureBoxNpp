@@ -4,6 +4,8 @@
 
 ; My Blog: [The Grand Unified Programming Theory: The Pure Function Pipeline Data Flow with Principle-based Warehouse/Workshop Model](https://github.com/linpengcheng/PurefunctionPipelineDataflow)
 
+; Reference: [Markdown Literary programming that don't break the syntax of any programming language](https://github.com/linpengcheng/PurefunctionPipelineDataflow/blob/master/doc/markdown_literary_programming.md)
+
 ;## example01: Code with syntax highlighting.
 
 (defn f [[evens odds total amax amin] x]
@@ -22,6 +24,10 @@
 
 ;## example02: Mermaid flow chart
 
+; - Notepad++ preview HTML plugin (IE 11) don't display letter, 
+; - It can display letter using chrome open saved html 
+;   if set save html in config.
+
 ;```mermaid
 ;graph LR
 ;      A-->B
@@ -34,3 +40,18 @@
 
 ;![CowPlot](./image/cowplot.png)
 
+;## example04: UI + javascript/Clojurescript(sci)
+
+; Reference: [sci-script-tag](https://borkdude.github.io/sci-script-tag/)
+
+; - Notepad++ preview HTML plugin (IE 11) don't run UI script, 
+; - It can run UI script using chrome open saved html 
+;   if set save html in config.
+
+;<button onclick = "user.myAlert()">
+;        Click me</button>
+
+;<script type="application/x-sci">
+;  (defn myAlert []
+;    (js/alert "alert!"))
+;</script>
