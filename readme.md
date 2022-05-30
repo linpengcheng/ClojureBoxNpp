@@ -1,8 +1,8 @@
 **ClojureBoxNpp**
 
 Notepad++ patch for Clojure by: 
-- Methord 01: modifying config files of Lisp. 
-- Methord 02: userDefineLangs: Clojure
+- Method 01: modifying config files of Lisp. 
+- Method 02: userDefineLangs: Clojure
 
 ### Screenshots:
 
@@ -44,7 +44,7 @@ Edit Clojure hiccup (HTML DSL) with live preview:
 
 ### Config files of Clojure (userDefineLangs Clojure is Clojure, Lisp is also Clojure.) 
 
-- Methord 01: Modify Lisp as Clojure, Lisp is also Clojure.
+- Method 01: Modify Lisp as Clojure, Lisp is also Clojure.
 
   * notepad++\langs.xml
 
@@ -54,7 +54,7 @@ Edit Clojure hiccup (HTML DSL) with live preview:
   
   * notepad++\functionList\Lisp.xml
   
-- Methord 02: userDefineLangs: Clojure, Clojure is Clojure
+- Method 02: userDefineLangs: Clojure, Clojure is Clojure
 
   * notepad++\autoCompletion\Clojure.xml
   
