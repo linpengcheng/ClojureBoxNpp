@@ -42,7 +42,7 @@ LSP
 
 - Clojure & ClojureScript Language Server: [clojure-lsp](https://github.com/clojure-lsp/clojure-lsp)
   
-  clojure-lsp bug: If the folder of the Clojure project (or Clojure source files) isn't 
+  Bug on clojure-lsp startup: If the folder of the Clojure project (or Clojure source files) isn't 
   on the same disk as the Notepad++ Home folder, create (or open) a temporary Clojure source code file 
   on the same disk as the Notepad++ Home folder to start the Clojure language server.
   
