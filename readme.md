@@ -181,6 +181,10 @@ https://sourceforge.net/projects/npp-plugins/files/
 
   - nppxmltreeview: 
     https://github.com/joaoasrosa/nppxmltreeview
+    
+  - PlantUmlViewer: https://github.com/Fruchtzwerg94/PlantUmlViewer
+  
+  - PlantUML_Notepad-_UDL: https://github.com/brianmaher84/PlantUML_Notepad-_UDL
 
   - NppGraphViz: https://github.com/jrebacz/NppGraphViz
   
