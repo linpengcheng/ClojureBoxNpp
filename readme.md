@@ -36,6 +36,20 @@ Edit Clojure hiccup (HTML DSL) with live preview:
 
 ![](./Screenshots/edit_hiccup_with_live_preview.png)
 
+LSP
+
+- Notepad++ LSP client plugin: [Ekopalypse/NppLspClient](https://github.com/Ekopalypse/NppLspClient)
+
+- Clojure & ClojureScript Language Server: [clojure-lsp](https://github.com/clojure-lsp/clojure-lsp)
+  
+  clojure-lsp bug: If the folder of the Clojure project (or Clojure source files) isn't 
+  on the same disk as the Notepad++ Home folder, create (or open) a temporary Clojure source code file 
+  on the same disk as the Notepad++ Home folder to start the Clojure language server.
+  
+- SQL Language Server: [lighttiger2505/sqls](https://github.com/lighttiger2505/sqls)
+
+![](https://user-images.githubusercontent.com/47723516/172181400-37a89d1f-5957-4aed-b35e-7f2f54caa70b.png)
+
 ### Patch edition Method:
 
 1. copy all files of notepad++ directory to notepad++ home directory.
